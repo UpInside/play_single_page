@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Open Sans", serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.radius{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.rounded{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.transition{
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+}
+
+.button_cta{
+    background: #F5B945;
+    padding: 15px 20px 13px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 6px solid #EF9E0F;
+}
+
+.button_cta:hover{
+    background: #FDCD56;
+}
+
+.container{
+    width: 1100px;
+    max-width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.optin,
+.main_header{
+    background: url(images/background.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main_header_content{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.main_header_content_headline{
+    flex-basis: 60%;
+    padding: 20px;
+    color: #fff;
+}
+
+.main_header_content_headline h1{
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    margin: 15px 0 30px 0;
+}
+
+.main_header_content_cta{
+    flex-basis: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.main_header_content_cta img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    max-width: 80%;
+}
+
+.main_header_content_cta_btn{
+    margin-top: -30px;
+}
+
+.bullet_points_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.bullet_points_header{
+    text-align: center;
+    padding: 30px 20px 0 20px;
+}
+
+.bullet_points_header h1{
+    font-weight: 300;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.bullet_points_content_item{
+    flex-basis: calc(33.33% - 40px);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bullet_points_content_item .img{
+    flex-basis: 30%;
+}
+
+.bullet_points_content_item .bullet{
+    flex-basis: 70%;
+    padding-left: 20px;
+}
+
+.bullet_points_content_item h2{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #333;
+}
+
+.main_cta{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.author_content{
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    color: #888;
+}
+
+.author_content_img{
+    flex-basis: 15%;
+}
+
+.author_content_header{
+    flex-basis: 85%;
+    padding-left: 30px;
+}
+
+.author_content_header h1{
+    font-size: 1em;
+}
+
+.author_content_header p{
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.main_footer{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    color: #999;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.main_footer div{
+    padding: 10px;
+}
+
+.main_footer div a{
+    color: #999;
+}
+
+.main_footer div a:hover{
+    color: #EF9E0F;
+}
+
+.optin_content{
+    width: 520px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.optin_content_header{
+    margin-bottom: 30px;
+}
+
+.optin_content_header h1{
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+.optin_content_form input,
+.optin_content_form button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.optin_content_form button{
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    color: #fff;
+    background: #35BA9B;
+    cursor: pointer;
+}
+
+.optin_content_form button:hover{
+    background: #46CEAC;
+}
+
+.optin_content_form p{
+    font-size: 0.8em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+@media(max-width: 56em){
+    .main_header_content_headline,
+    .main_header_content_cta{
+        flex-basis: 100%;
+    }
+
+    .bullet_points_content_item{
+        flex-basis: calc(50% - 40px);
+    }
+}
+
+@media(max-width: 42em){
+    .bullet_points_content_item{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
